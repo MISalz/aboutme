@@ -1,0 +1,11 @@
+body {background: linear-gradient(to bottom, #ccffcc 0%, #99ccff 100%);
+  COLOR: 006699;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 5em;
+  background-image: url("paper.gif");
+}
+
+p {text-align: center;
+color: 006699; }
+
