@@ -16,3 +16,8 @@ p{text-align: center;
 color: 006699; 
 font-family: inherit;}
 
+
+ol
+{
+list-style: decimal;
+}
