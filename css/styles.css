@@ -1,23 +1,43 @@
 h1{font-family: cursive;
-
+  font-weight: bolder;
 }
-
 body{
   background-image: url("Matrix_ms_unsplash.jpg");
   background: linear-gradient(to bottom, #ccffcc 0%, #99ccff 100%);
-  COLOR: 006699;
   padding-left: 10em;
   padding-right: 10em;
   padding-top: 5em;
  
 }
-
-p{text-align: center;
+p{ text-align: center;
 color: 006699; 
 font-family: inherit;}
 
-
-ol
-{
-list-style: decimal;
+#school{
+  background-color: mediumturquoise;
+  color: white;
+  padding-inline-start: 3ex;
+  border-style: dotted;
+  margin-left: auto;
+ 
 }
+
+#work{
+  background-color: lightseagreen;
+  color: white;
+  padding-inline-start: 3ex;
+  border-style: dotted;
+  margin-left: auto;
+}
+#movies {
+  background-color:#52d6ff;
+  border-style: dotted;
+  margin-left: auto;
+ 
+  
+}
+ h2{font-family: cursive;
+  font-weight: bolder;}
+
+ol{ list-style: decimal;}
+ul{  list-style-type: square;}
