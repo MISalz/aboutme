@@ -3,7 +3,7 @@
 //1.Name question
 var question1 = prompt('What is your name?');
 console.log(question1);
-/*
+
 //2.Travel question
 var question2 = prompt(question1 + ' Do you like to travel');
 
@@ -70,7 +70,7 @@ else if (question6.toLowerCase() === 'no'){
 else{ 
   alert(question1+ ' I guess this is the end of our connection. Im sorry we didnt have more things in common but I enjoyed our interaction.');
 }
-*/
+
 //7.years in college
 var years = 10;
 
