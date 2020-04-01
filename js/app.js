@@ -1,5 +1,5 @@
 'use strict'; 
-
+/*
 //1.Name question
 var question1 = prompt('What is your name?');
 console.log(question1);
@@ -67,32 +67,23 @@ else if (question6.toLowerCase() === 'no'){
   alert(' Me either, I guess that means theres more turkey for seconds during the holidays. amma right?? ' +question1+ ' Holidays can be so stressfull when you have to attend more than one dinner or gathering.');
 } 
 // no answer - bypass yes/no answers
-else{ 
+else { 
   alert(question1+ ' I guess this is the end of our connection. Im sorry we didnt have more things in common but I enjoyed our interaction.');
-}
+}*/
 
 //7.years in college
-var years = 10;
+var pets = 2;
+var attempts = 4;
+var responses = [];
 
-
-for (var i = 0; i < 5; i++);
-{document.write(i); 
-  
-  var question7 = prompt(question1 + 'Can you guess how many years it too for me to obtain my Associates degree?');
-console.log(question7)
-while(i === years ){
-if(question7 === 10)
-{
-  alert(question1+ ' Yes it took me ' + question7+ 'years to complete my associates degree. It was mostly being distracted that took me so long');
-} 
-else if (question7 < 10)
-{ 
-  alert(question1 + ' Your guess is too low,  guess again!');
-} 
-
-else if (question7 > 10)
-{ 
-  alert(question1 + ' Your guess is too high,  guess again!');
-} 
-counter++
-}}
+ for (var i = 0; i < attempts; i++);
+ console.log(responses[i]);{
+   var question7 = prompt('Can you guess how many pets i have?');
+  console.log (question7);
+  if (parseint(question7) === pets);{
+  alert(question1+ 'you are correct I have ' +question7+ ' 2 dogs Avocado \(avo) for short and Yoshi');
+} else if (parseint(question7) < pets);{ 
+  alert(question1+ ' All creatures need company, guess again!');
+} else (parseint(question7) > pets);{
+  alert(question1+ ' What? do you think I own a zoo?, guess again!');
+} responses++ }
