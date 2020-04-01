@@ -1,5 +1,6 @@
 'use strict'; 
-/*
+var correctAnswer = 0;
+
 //1.Name question
 var question1 = prompt('What is your name?');
 console.log(question1);
@@ -9,6 +10,7 @@ var question2 = prompt(question1 + ' Do you like to travel');
 
 if(question2.toLowerCase() === 'yes'){
   alert(question1 + ' We have something in common. I love to travel but have only been to my MX and USA.');
+  correctAnswer ++;
 } 
 
 else if (question2.toLowerCase() === 'no'){
@@ -24,6 +26,7 @@ else {
 var question3 = prompt('Do you belive in the unexplained?');
 if(question3.toLocaleLowerCase() === 'yes'){
   alert(question1+ ' I love science and the mystery of what we dont know...\(insert xfiles theme song here)');
+  correctAnswer++;
 } 
 else if(question3.toLocaleLowerCase() === 'no'){
   alert(question1+ ' Technology is a part of science and if you use or enjoy techonology you must like some parts of science');
@@ -36,6 +39,7 @@ else{
 var question4 = prompt('Have you seen Empire Records?');
 if(question4.toLocaleLowerCase() === 'yes'){
   alert(question1+ ' This is one of my background movies; good music, good actors and great movie quotes. The charcaters are so relatable');
+  correctAnswer++;
 } 
 else if(question4.toLocaleLowerCase() === 'no'){
   alert(question1+ ' You\'d have to be a 90\'s kid to remember it');
@@ -50,6 +54,7 @@ var question5 = prompt('I have grown up with technology my whole life '+question
 
 if(question5.toLowerCase() === 'yes'){
   alert(question1+ ' My dad built and programmed computers, growing up we had tons of equipment all over my house. I learned how to use computers before they were even a common thing to have in households.');
+  correctAnswer++;
 } 
 else if(question5.toLowerCase() === 'no'){
   alert(question1+ ' Computers can be tough to learn if you have no desire to learn the intricacies of computing.');
@@ -62,6 +67,7 @@ else{
 var question6 = prompt('Do you have a big family?');
 if(question6.toLowerCase() === 'yes'){
   alert(question1+ ' Thats amazing! I have a small family, but I love them. Family get togethers are my favorite thing to do.');
+  correctAnswer++;
 } 
 else if (question6.toLowerCase() === 'no'){
   alert(' Me either, I guess that means theres more turkey for seconds during the holidays. amma right?? ' +question1+ ' Holidays can be so stressfull when you have to attend more than one dinner or gathering.');
@@ -69,21 +75,22 @@ else if (question6.toLowerCase() === 'no'){
 // no answer - bypass yes/no answers
 else { 
   alert(question1+ ' I guess this is the end of our connection. Im sorry we didnt have more things in common but I enjoyed our interaction.');
-}*/
-
-//7.years in college
+}
+//7.pets
 var pets = 2;
 var attempts = 4;
-var responses = [];
 
- for (var i = 0; i < attempts; i++);
- console.log(responses[i]);{
-   var question7 = prompt('Can you guess how many pets i have?');
-  console.log (question7);
-  if (parseint(question7) === pets);{
-  alert(question1+ 'you are correct I have ' +question7+ ' 2 dogs Avocado \(avo) for short and Yoshi');
-} else if (parseint(question7) < pets);{ 
-  alert(question1+ ' All creatures need company, guess again!');
-} else (parseint(question7) > pets);{
-  alert(question1+ ' What? do you think I own a zoo?, guess again!');
-} responses++ }
+ for (var i = 0; i < attempts; i++){
+    var question7 = prompt('Can you guess how many pets i have?');
+    console.log (question7);   
+    if (parseInt(question7) === pets){
+      alert(question1+ 'You are correct I have ' +question7+ ' dogs Avocado \(avo) for short and Yoshi');
+      i = 4;
+      correctAnswer++;
+  } else if (parseInt(question7) < pets){ 
+      alert(question1+ ' All creatures need company, guess again!');
+  } else if (parseInt(question7) > pets){
+      alert(question1+ ' What? do you think I own a zoo?, guess again!');
+  }
+   }
+   alert(question1+ ' you got '+correctAnswer+ ' out of 7 questions')
