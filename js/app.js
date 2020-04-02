@@ -1,6 +1,12 @@
 'use strict';
 
-var correctAnswer = 0;
+function corra() {
+  var correctAnswer = 0;
+  console.log(correctAnswer);
+  return corra;
+}
+var correct = corra;
+console.log(correct);
 
 function question1() {
   // 1.Name question
@@ -10,6 +16,7 @@ function question1() {
 }
 var userName = question1();
 console.log(userName);
+
 function question2Travel(question1) {
   //2.Travel question
   var question2 = prompt(question1 + ' Do you like to travel');
@@ -120,4 +127,7 @@ function question7pet(question1) {
 }
 question7pet(userName);
 
-alert(question1 + ' you got ' + correctAnswer + ' out of 7 questions')
+function count(question1) {
+  alert(question1 + ' you got ' + correctAnswer + ' out of 7 questions')
+}
+count(userName + correctAnswer)
