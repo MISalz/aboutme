@@ -99,21 +99,25 @@ function question6fam(question1) {
 }
 question6fam(userName);
 
-//7.pets
-var pets = 2;
-var attempts = 4;
+function question7pet(question1) {
+  //7.pets
+  var pets = 2;
+  var attempts = 4;
 
-for (var i = 0; i < attempts; i++) {
-  var question7 = prompt('Can you guess how many pets i have?');
-  console.log(question7);
-  if (parseInt(question7) === pets) {
-    alert(question1 + 'You are correct I have ' + question7 + ' dogs Avocado \(avo) for short and Yoshi');
-    i = 4;
-    correctAnswer++;
-  } else if (parseInt(question7) < pets) {
-    alert(question1 + ' All creatures need company, guess again!');
-  } else if (parseInt(question7) > pets) {
-    alert(question1 + ' What? do you think I own a zoo?, guess again!');
+  for (var i = 0; i < attempts; i++) {
+    var question7 = prompt('Can you guess how many pets i have?');
+    console.log(question7);
+    if (parseInt(question7) === pets) {
+      alert(question1 + ' You are correct I have ' + question7 + ' dogs Avocado \(avo) for short and Yoshi');
+      i = 4;
+      correctAnswer++;
+    } else if (parseInt(question7) < pets) {
+      alert(question1 + ' All creatures need company, guess again!');
+    } else if (parseInt(question7) > pets) {
+      alert(question1 + ' What? do you think I own a zoo?, guess again!');
+    }
   }
 }
+question7pet(userName);
+
 alert(question1 + ' you got ' + correctAnswer + ' out of 7 questions')
