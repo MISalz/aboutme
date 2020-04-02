@@ -64,33 +64,41 @@ function question4Movie(question1) {
 }
 question4Movie(userName);
 
-//5.Tech
-var question5 = prompt('I have grown up with technology my whole life ' + question1 + ' do you have much experience with computers and their programming?');
+function question5tech(question1) {
+  //5.Tech
+  var question5 = prompt('I have grown up with technology my whole life ' + question1 + ' do you have much experience with computers and their programming?');
 
-if (question5.toLowerCase() === 'yes') {
-  alert(question1 + ' My dad built and programmed computers, growing up we had tons of equipment all over my house. I learned how to use computers before they were even a common thing to have in households.');
-  correctAnswer++;
+  if (question5.toLowerCase() === 'yes') {
+    alert(question1 + ' My dad built and programmed computers, growing up we had tons of equipment all over my house. I learned how to use computers before they were even a common thing to have in households.');
+    correctAnswer++;
+  }
+  else if (question5.toLowerCase() === 'no') {
+    alert(question1 + ' Computers can be tough to learn if you have no desire to learn the intricacies of computing.');
+  }
+  // no answer - bypass yes/no answers
+  else {
+    alert(question1 + ' I see this is not a topic your\'re into. Lets learn more about each other');
+  }
 }
-else if (question5.toLowerCase() === 'no') {
-  alert(question1 + ' Computers can be tough to learn if you have no desire to learn the intricacies of computing.');
+question5tech(userName);
+
+function question6fam(question1) {
+  //6.Family
+  var question6 = prompt('Do you have a big family?');
+  if (question6.toLowerCase() === 'yes') {
+    alert(question1 + ' Thats amazing! I have a small family, but I love them. Family get togethers are my favorite thing to do.');
+    correctAnswer++;
+  }
+  else if (question6.toLowerCase() === 'no') {
+    alert(' Me either, I guess that means theres more turkey for seconds during the holidays. amma right?? ' + question1 + ' Holidays can be so stressfull when you have to attend more than one dinner or gathering.');
+  }
+  // no answer - bypass yes/no answers
+  else {
+    alert(question1 + ' I guess this is the end of our connection. Im sorry we didnt have more things in common but I enjoyed our interaction.');
+  }
 }
-// no answer - bypass yes/no answers
-else {
-  alert(question1 + ' I see this is not a topic your\'re into. Lets learn more about each other');
-}
-//6.Family
-var question6 = prompt('Do you have a big family?');
-if (question6.toLowerCase() === 'yes') {
-  alert(question1 + ' Thats amazing! I have a small family, but I love them. Family get togethers are my favorite thing to do.');
-  correctAnswer++;
-}
-else if (question6.toLowerCase() === 'no') {
-  alert(' Me either, I guess that means theres more turkey for seconds during the holidays. amma right?? ' + question1 + ' Holidays can be so stressfull when you have to attend more than one dinner or gathering.');
-}
-// no answer - bypass yes/no answers
-else {
-  alert(question1 + ' I guess this is the end of our connection. Im sorry we didnt have more things in common but I enjoyed our interaction.');
-}
+question6fam(userName);
+
 //7.pets
 var pets = 2;
 var attempts = 4;
