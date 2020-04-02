@@ -5,11 +5,11 @@ var correctAnswer = 0;
 function question1() {
   // 1.Name question
   var question1Name = prompt('What is your name?');
-  // console.log(question1Name);
+  console.log(question1Name);
   return question1Name;
 }
 var userName = question1();
-
+console.log(userName);
 function question2Travel(question1) {
   //2.Travel question
   var question2 = prompt(question1 + ' Do you like to travel');
@@ -26,38 +26,43 @@ function question2Travel(question1) {
   // no answer - bypass yes/no answers
   else {
     alert(question1 + ' I know its difficult to get to know each other this way, but i know were going to be friends for a long time');
-  }}
+  }
+}
 question2Travel(userName);
 
-function question3unex() {
+function question3unex(question1) {
   //3.SCIFI
   var question3 = prompt('Do you belive in the unexplained?');
-  if (question3.toLocaleLowerCase() === 'yes') {
+  if (question3.toLowerCase() === 'yes') {
     alert(question1 + ' I love science and the mystery of what we dont know...(insert xfiles theme song here)');
     correctAnswer++;
   }
-  else if (question3.toLocaleLowerCase() === 'no') {
+  else if (question3.toLowerCase() === 'no') {
     alert(question1 + ' Technology is a part of science and if you use or enjoy techonology you must like some parts of science');
   }
   // no answer - bypass yes/no answers
   else {
     alert(question1 + ' These are the things that are important to me, to get to know me it will be easier if we could interact a bit more.');
-  }}
+  }
+}
 question3unex(userName);
 
-//4.movies
-var question4 = prompt('Have you seen Empire Records?');
-if (question4.toLocaleLowerCase() === 'yes') {
-  alert(question1 + ' This is one of my background movies; good music, good actors and great movie quotes. The charcaters are so relatable');
-  correctAnswer++;
+function question4Movie(question1) {
+  //4.movies
+  var question4 = prompt('Have you seen Empire Records?');
+  if (question4.toLowerCase() === 'yes') {
+    alert(question1 + ' This is one of my background movies; good music, good actors and great movie quotes. The charcaters are so relatable');
+    correctAnswer++;
+  }
+  else if (question4.toLowerCase() === 'no') {
+    alert(question1 + ' You\'d have to be a 90\'s kid to remember it');
+  }
+  // no answer - bypass yes/no answers
+  else {
+    alert(question1 + ' I recommend this movie if you like to watch underrated movies.');
+  }
 }
-else if (question4.toLocaleLowerCase() === 'no') {
-  alert(question1 + ' You\'d have to be a 90\'s kid to remember it');
-}
-// no answer - bypass yes/no answers
-else {
-  alert(question1 + ' I recommend this movie if you like to watch underrated movies.');
-}
+question4Movie(userName);
 
 //5.Tech
 var question5 = prompt('I have grown up with technology my whole life ' + question1 + ' do you have much experience with computers and their programming?');
