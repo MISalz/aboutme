@@ -26,23 +26,25 @@ function question2Travel(question1) {
   // no answer - bypass yes/no answers
   else {
     alert(question1 + ' I know its difficult to get to know each other this way, but i know were going to be friends for a long time');
-  }
-}
+  }}
 question2Travel(userName);
 
-//3.SCIFI
-var question3 = prompt('Do you belive in the unexplained?');
-if (question3.toLocaleLowerCase() === 'yes') {
-  alert(question1 + ' I love science and the mystery of what we dont know...\(insert xfiles theme song here)');
-  correctAnswer++;
-}
-else if (question3.toLocaleLowerCase() === 'no') {
-  alert(question1 + ' Technology is a part of science and if you use or enjoy techonology you must like some parts of science');
-}
-// no answer - bypass yes/no answers
-else {
-  alert(question1 + ' These are the things that are important to me, to get to know me it will be easier if we could interact a bit more.');
-}
+function question3unex() {
+  //3.SCIFI
+  var question3 = prompt('Do you belive in the unexplained?');
+  if (question3.toLocaleLowerCase() === 'yes') {
+    alert(question1 + ' I love science and the mystery of what we dont know...(insert xfiles theme song here)');
+    correctAnswer++;
+  }
+  else if (question3.toLocaleLowerCase() === 'no') {
+    alert(question1 + ' Technology is a part of science and if you use or enjoy techonology you must like some parts of science');
+  }
+  // no answer - bypass yes/no answers
+  else {
+    alert(question1 + ' These are the things that are important to me, to get to know me it will be easier if we could interact a bit more.');
+  }}
+question3unex(userName);
+
 //4.movies
 var question4 = prompt('Have you seen Empire Records?');
 if (question4.toLocaleLowerCase() === 'yes') {
