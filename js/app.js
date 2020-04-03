@@ -1,12 +1,7 @@
 'use strict';
 
-function corra() {
-  var correctAnswer = 0;
-  console.log(correctAnswer);
-  return corra;
-}
-var correct = corra;
-console.log(correct);
+
+var correctAnswer = 0;
 
 function question1() {
   // 1.Name question
@@ -127,7 +122,7 @@ function question7pet(question1) {
 }
 question7pet(userName);
 
-function count(question1) {
-  alert(question1 + ' you got ' + correctAnswer + ' out of 7 questions')
+function count(question1, correctAnswer) {
+  alert(question1 + ' you got ' + correctAnswer + ' out of 7 questions');
 }
-count(userName + correctAnswer)
+count(userName, correctAnswer);
