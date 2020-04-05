@@ -5,23 +5,19 @@ body{
   background: linear-gradient(to bottom, #b5ddd7 0%,#83c7bc 17%,#005849 83%,#00241e 100%); 
   padding-left: 10em;
   padding-right: 10em;
-  padding-top: 10em;
- 
+  padding-top: 10em; 
 }
 p{ text-align: center;
 color: 006699; 
 font-family: inherit;}
-
 #school{
   background-color: mediumturquoise;
   color: white;
   padding-inline-start: 3ex;
   border-style: dotted;
   margin-left: auto;
-  border-radius:50px 20px;
- 
+  border-radius:50px 20px; 
 }
-
 #work{
   background-color: lightseagreen;
   color: white;
@@ -34,13 +30,10 @@ font-family: inherit;}
   background-color:#52d6ff;
   border-style: dotted;
   margin-left: auto;
-  border-radius:10px 10px;
- 
-  
+  border-radius:10px 10px;  
 }
  h2{font-family: cursive;
   font-weight: bolder;}
-
 ol{ list-style: decimal;}
 ul{  list-style-type: square;}
 
