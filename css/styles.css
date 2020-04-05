@@ -18,7 +18,7 @@ font-family: inherit;}
   padding-inline-start: 3ex;
   border-style: dotted;
   margin-left: auto;
-  border-radius:50px 20px
+  border-radius:50px 20px;
  
 }
 
@@ -28,13 +28,13 @@ font-family: inherit;}
   padding-inline-start: 3ex;
   border-style: dotted;
   margin-left: auto;
-  border-radius:20px 20px
+  border-radius:20px 20px;
 }
 #movies {
   background-color:#52d6ff;
   border-style: dotted;
   margin-left: auto;
-  border-radius:10px 10px
+  border-radius:10px 10px;
  
   
 }
